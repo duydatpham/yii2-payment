@@ -40,6 +40,12 @@ class PaymentClient extends BasePaymentClient
     public $merchantId;
 
     /**
+     * @var bool phân biệt ký tự hoa thường khi xác minh chữ ký.
+     * @since 1.0.3
+     */
+    public $caseSensitive = false;
+
+    /**
      * @inheritdoc
      * @throws InvalidConfigException
      * @since 1.0.3
@@ -72,7 +78,8 @@ class PaymentClient extends BasePaymentClient
 
         return Yii::createObject([
             'class' => 'yiiviet\payment\HashDataSignature',
-            'hashAlgo' => 'sha256'
+            'hashAlgo' => 'sha256',
+            'caseSensitive' => $this->caseSensitive
         ], [$data]);
     }
 
