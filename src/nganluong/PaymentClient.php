@@ -1,15 +1,15 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace yiiviet\payment\nganluong;
+namespace duydatpham\payment\nganluong;
 
 use yii\base\InvalidConfigException;
 
-use yiiviet\payment\BasePaymentClient;
+use duydatpham\payment\BasePaymentClient;
 
 /**
  * Lớp PaymentClient là lớp chứa các thuộc tính để truy vấn đến ngân lượng nhu merchant id, merchant password, email...
@@ -69,7 +69,7 @@ class PaymentClient extends BasePaymentClient
     /**
      * @inheritdoc
      */
-    protected function initDataSignature(string $data, string $type = null): ?\yiiviet\payment\DataSignature
+    protected function initDataSignature(string $data, string $type = null): ?\duydatpham\payment\DataSignature
     {
         return null;
     }

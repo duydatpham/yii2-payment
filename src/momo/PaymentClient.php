@@ -1,19 +1,19 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace yiiviet\payment\momo;
+namespace duydatpham\payment\momo;
 
 use Yii;
 
 use yii\base\InvalidConfigException;
 
-use yiiviet\payment\BasePaymentClient;
-use yiiviet\payment\DataSignature;
-use yiiviet\payment\HmacDataSignature;
+use duydatpham\payment\BasePaymentClient;
+use duydatpham\payment\DataSignature;
+use duydatpham\payment\HmacDataSignature;
 
 /**
  * Lớp PaymentClient chứa các thuộc tính dùng để hổ trợ [[PaymentGateway]] kết nối đến MOMO.

@@ -5,11 +5,11 @@
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace yiiviet\payment\vnpayment;
+namespace duydatpham\payment\vnpayment;
 
 use yii\helpers\ArrayHelper;
 
-use yiiviet\payment\VerifiedData as BaseVerifiedData;
+use duydatpham\payment\VerifiedData as BaseVerifiedData;
 
 /**
  * Lớp VerifiedData tổng hợp dữ liệu đã được xác minh từ VnPayment.

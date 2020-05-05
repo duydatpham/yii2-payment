@@ -1,11 +1,11 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace yiiviet\payment;
+namespace duydatpham\payment;
 
 use Yii;
 
@@ -135,9 +135,9 @@ trait GatewayBankProviderTrait
     protected function defaultProviderClasses(): array
     {
         return [
-            'yiiviet\payment\baokim\PaymentGateway' => 'yiiviet\payment\baokim\BankProvider',
-            'yiiviet\payment\nganluong\PaymentGateway' => 'yiiviet\payment\nganluong\BankProvider',
-            'yiiviet\payment\vnpayment\PaymentGateway' => 'yiiviet\payment\vnpayment\BankProvider'
+            'duydatpham\payment\baokim\PaymentGateway' => 'duydatpham\payment\baokim\BankProvider',
+            'duydatpham\payment\nganluong\PaymentGateway' => 'duydatpham\payment\nganluong\BankProvider',
+            'duydatpham\payment\vnpayment\PaymentGateway' => 'duydatpham\payment\vnpayment\BankProvider'
         ];
     }
 

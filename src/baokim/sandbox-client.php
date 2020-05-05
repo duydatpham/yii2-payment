@@ -1,6 +1,6 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  *
@@ -8,7 +8,7 @@
  */
 
 return [
-    'class' => 'yiiviet\payment\baokim\PaymentClient',
+    'class' => 'duydatpham\payment\baokim\PaymentClient',
     'merchantEmail' => 'dev.baokim@bk.vn',
     'merchantId' => 647,
     'securePassword' => 'ae543c080ad91c23',

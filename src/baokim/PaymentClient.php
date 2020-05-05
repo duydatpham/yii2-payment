@@ -1,17 +1,17 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace yiiviet\payment\baokim;
+namespace duydatpham\payment\baokim;
 
 use Yii;
 
 use yii\base\InvalidConfigException;
 
-use yiiviet\payment\BasePaymentClient;
+use duydatpham\payment\BasePaymentClient;
 
 /**
  * Lớp PaymentClient chứa các thuộc tính dùng để hổ trợ [[PaymentGateway]] kết nối đến Bảo Kim.
@@ -150,21 +150,21 @@ class PaymentClient extends BasePaymentClient
 
     /**
      * @inheritdoc
-     * @return object|\yiiviet\payment\DataSignature
+     * @return object|\duydatpham\payment\DataSignature
      * @throws \yii\base\InvalidConfigException
      */
-    protected function initDataSignature(string $data, string $type = null): ?\yiiviet\payment\DataSignature
+    protected function initDataSignature(string $data, string $type = null): ?\duydatpham\payment\DataSignature
     {
         if ($type === self::SIGNATURE_RSA) {
             $config = [
-                'class' => 'yiiviet\payment\RsaDataSignature',
+                'class' => 'duydatpham\payment\RsaDataSignature',
                 'publicCertificate' => $this->publicCertificate ?? false,
                 'privateCertificate' => $this->privateCertificate,
                 'openSSLAlgo' => OPENSSL_ALGO_SHA1
             ];
         } elseif ($type === self::SIGNATURE_HMAC) {
             $config = [
-                'class' => 'yiiviet\payment\HmacDataSignature',
+                'class' => 'duydatpham\payment\HmacDataSignature',
                 'key' => $this->securePassword,
                 'hmacAlgo' => 'SHA1',
                 'caseSensitive' => false

@@ -1,16 +1,16 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
 
-namespace yiiviet\payment\vtcpay;
+namespace duydatpham\payment\vtcpay;
 
 use yii\helpers\ArrayHelper;
 
-use yiiviet\payment\VerifiedData as BaseVerifiedData;
+use duydatpham\payment\VerifiedData as BaseVerifiedData;
 
 /**
  * Lớp VerifiedData tổng hợp dữ liệu đã được xác minh từ VTCPay.

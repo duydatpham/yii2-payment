@@ -1,11 +1,11 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace yiiviet\payment\baokim;
+namespace duydatpham\payment\baokim;
 
 use Yii;
 
@@ -16,7 +16,7 @@ use yii\base\NotSupportedException;
 use yii\di\Instance;
 use yii\helpers\ArrayHelper;
 
-use yiiviet\payment\BasePaymentGateway;
+use duydatpham\payment\BasePaymentGateway;
 
 use vxm\gatewayclients\RequestEvent;
 

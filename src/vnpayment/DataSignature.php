@@ -1,14 +1,14 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace yiiviet\payment\vnpayment;
+namespace duydatpham\payment\vnpayment;
 
 use yii\base\InvalidConfigException;
-use yiiviet\payment\DataSignature as BaseDataSignature;
+use duydatpham\payment\DataSignature as BaseDataSignature;
 
 /**
  * Lớp DataSignature hổ trợ tạo và kiểm tra chữ ký dữ liệu khi tương tác với VnPayment.
@@ -17,7 +17,7 @@ use yiiviet\payment\DataSignature as BaseDataSignature;
  *
  * @author Vuong Minh <vuongxuongminh@gmail.com>
  * @since 1.0
- * @deprecated since 1.0.2 we use `yiiviet\payment\HashDataSignature` instead.
+ * @deprecated since 1.0.2 we use `duydatpham\payment\HashDataSignature` instead.
  */
 class DataSignature extends BaseDataSignature
 {

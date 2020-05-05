@@ -1,19 +1,19 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
 
-namespace yiiviet\payment\vtcpay;
+namespace duydatpham\payment\vtcpay;
 
 use GatewayClients\DataInterface;
 
 use yii\base\NotSupportedException;
 use yii\httpclient\Client as HttpClient;
 
-use yiiviet\payment\BasePaymentGateway;
+use duydatpham\payment\BasePaymentGateway;
 
 /**
  * Lớp PaymentGateway thực thi các phương thức trừu tượng dùng hổ trợ kết nối đến VTCPay.

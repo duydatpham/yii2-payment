@@ -1,17 +1,17 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
-namespace yiiviet\payment\nganluong;
+namespace duydatpham\payment\nganluong;
 
 use GatewayClients\DataInterface;
 
 use yii\base\NotSupportedException;
 
-use yiiviet\payment\BasePaymentGateway;
+use duydatpham\payment\BasePaymentGateway;
 
 use vxm\gatewayclients\RequestEvent;
 

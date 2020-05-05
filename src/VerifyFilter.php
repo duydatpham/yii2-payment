@@ -1,12 +1,12 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
 
-namespace yiiviet\payment;
+namespace duydatpham\payment;
 
 use Yii;
 
@@ -39,7 +39,7 @@ class VerifyFilter extends ActionFilter
     const VRC_PURCHASE_SUCCESS = BasePaymentGateway::VRC_PURCHASE_SUCCESS;
 
     /**
-     * @var \yiiviet\payment\PaymentGatewayInterface Đối tượng cổng thanh toán dùng để xác thực tính hợp lệ của dữ liệu đầu vào,
+     * @var \duydatpham\payment\PaymentGatewayInterface Đối tượng cổng thanh toán dùng để xác thực tính hợp lệ của dữ liệu đầu vào,
      * bạn có thể thiết lập nó thông qua `id component` trong `app`.
      */
     public $gateway;
@@ -84,7 +84,7 @@ class VerifyFilter extends ActionFilter
             throw new InvalidConfigException('`gateway` property must be set!');
         } else {
 
-            $this->gateway = Instance::ensure($this->gateway, 'yiiviet\payment\PaymentGatewayInterface');
+            $this->gateway = Instance::ensure($this->gateway, 'duydatpham\payment\PaymentGatewayInterface');
         }
 
         if (empty($this->commands)) {

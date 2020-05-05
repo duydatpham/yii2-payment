@@ -1,16 +1,16 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
 
-namespace yiiviet\payment\baokim;
+namespace duydatpham\payment\baokim;
 
 use yii\base\InvalidCallException;
 
-use yiiviet\payment\BankProvider as BaseBankProvider;
+use duydatpham\payment\BankProvider as BaseBankProvider;
 
 /**
  * Lớp BankProvider cung cấp thông tin ngân hàng mà Bảo Kim hổ trợ.

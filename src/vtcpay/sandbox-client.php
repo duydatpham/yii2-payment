@@ -7,7 +7,7 @@
  */
 
 return [
-    'class' => 'yiiviet\payment\vtcpay\PaymentClient',
+    'class' => 'duydatpham\payment\vtcpay\PaymentClient',
     'secureCode' => 'Vtc-Kave1234567890!@#$%^&*()',
     'merchantId' => '175313',
     'business' => '0963465816',

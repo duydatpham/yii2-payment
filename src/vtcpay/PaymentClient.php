@@ -1,19 +1,19 @@
 <?php
 /**
- * @link https://github.com/yiiviet/yii2-payment
+ * @link https://github.com/duydatpham/yii2-payment
  * @copyright Copyright (c) 2017 Yii Viet
  * @license [New BSD License](http://www.opensource.org/licenses/bsd-license.php)
  */
 
 
-namespace yiiviet\payment\vtcpay;
+namespace duydatpham\payment\vtcpay;
 
 use Yii;
 
 use yii\base\InvalidConfigException;
 
-use yiiviet\payment\BasePaymentClient;
-use yiiviet\payment\DataSignature;
+use duydatpham\payment\BasePaymentClient;
+use duydatpham\payment\DataSignature;
 
 /**
  * Lớp PaymentClient hổ trợ tạo và kiểm tra chữ ký dữ liệu và có các thuộc tính kết nối đến cổng thanh toán VTCPay.
@@ -69,7 +69,7 @@ class PaymentClient extends BasePaymentClient
 
     /**
      * @inheritdoc
-     * @return object|\yiiviet\payment\HashDataSignature
+     * @return object|\duydatpham\payment\HashDataSignature
      * @throws \yii\base\InvalidConfigException
      */
     protected function initDataSignature(string $data, string $type = null): ?DataSignature
@@ -77,7 +77,7 @@ class PaymentClient extends BasePaymentClient
         $data .= '|' . $this->secureCode;
 
         return Yii::createObject([
-            'class' => 'yiiviet\payment\HashDataSignature',
+            'class' => 'duydatpham\payment\HashDataSignature',
             'hashAlgo' => 'sha256',
             'caseSensitive' => $this->caseSensitive
         ], [$data]);
