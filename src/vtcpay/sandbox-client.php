@@ -8,7 +8,8 @@
 
 return [
     'class' => 'yiiviet\payment\vtcpay\PaymentClient',
-    'secureCode' => 'baogomCHUHOAchuthuongso123vakytudacbiet!@#',
-    'merchantId' => '74132',
-    'business' => '0963465816'
+    'secureCode' => 'Vtc-Kave1234567890!@#$%^&*()',
+    'merchantId' => '175313',
+    'business' => '0963465816',
+    'caseSensitive' => false
 ];
